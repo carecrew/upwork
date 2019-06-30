@@ -1,0 +1,14 @@
+{
+  "name": "app",
+  "dependencies": {
+    "prop-types": "",
+    "react": "",
+    "react-native": "",
+    "react-native-navigation": "",
+    "react-native-typography": "",
+    "react-native-vector-icons": "",
+    "reactotron-react-native": "",
+    "styled-components": "",
+    "styled-system": ""
+  }
+}
