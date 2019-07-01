@@ -58,6 +58,7 @@ buck-out/
 # Application
 .env
 config.json
+package-lock.json
 
 # Editor
 .vscode

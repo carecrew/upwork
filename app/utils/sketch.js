@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const CONFIG = require('caren/config.json');
+const CONFIG = require('upwork/config.json');
 
 const borderWidth = CONFIG.SKETCH ? StyleSheet.hairlineWidth : 0;
 
