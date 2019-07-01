@@ -19,9 +19,9 @@ Build a two screen React Native application that sends a GraphQL query to a publ
 Use [this](https://github.com/carecrew/upwork/issues/2) issue from the original repository as a starting point. As you work, please replicate normal workflow by creating a branch for each issue with the following naming convention:
 
 ```
-feature/upwork-###-issue_name
+component/upwork-###-issue_name
 
-eg. feature/upwork-115-create_button_component
+eg. component/upwork-115-create_button_component
 ```
 
 Additionally, please include the issue number at the beginning of your commit messages.
