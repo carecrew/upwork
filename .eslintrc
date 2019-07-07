@@ -36,7 +36,7 @@
   "settings": {
     "import/resolver": {
       "alias": {
-        "map": [["app", "./app"], ["caren", "./"]],
+        "map": [["app", "./app"], ["upwork", "./"]],
         "extensions": [".js", ".json", ".jsx"]
       }
     }

@@ -39,7 +39,7 @@ CircleImage.propTypes = {
         width: PropTypes.number,
         height: PropTypes.number,
         headers: PropTypes.objectOf(PropTypes.string),
-      })
+      }),
     ),
   ]),
   size: PropTypes.number,
