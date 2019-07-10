@@ -21,3 +21,4 @@ export { default as StyledText } from 'app/components/UI/core/typography/styledT
 
 // Compounds
 export { default as CircleIcon } from 'app/components/UI/core/compounds/circleIcon/circleIcon';
+export { default as Button } from 'app/components/UI/core/compounds/button/button';

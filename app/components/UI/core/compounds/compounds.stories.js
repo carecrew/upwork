@@ -5,6 +5,7 @@ import { withNotes } from '@storybook/addon-ondevice-notes';
 
 import storyNavEnhancers from 'app/utils/storyNavEnhancers';
 import circleIcon from 'app/components/UI/core/compounds/circleIcon/circleIcon.pages';
+import buttonStyle from 'app/components/UI/core/compounds/button/buttonStyle.pages';
 
 const { the, chapter, page } = storyNavEnhancers;
 
@@ -21,3 +22,11 @@ storiesOf(the('Compounds'), module)
     .add(...page('1.0 borderWidth', () => circleIcon.borderWidth()))
     .add(...page('1.0 borderColor', () => circleIcon.borderColor()))
     .add(...page('1.0 family', () => circleIcon.family()))
+  .add(...chapter('ButtonStyle'))
+    .add(...page('1.0 default', () => buttonStyle.default()))
+    .add(...page('1.1 variants', () => buttonStyle.variants()))
+    .add(...page('1.2 disabled', () => buttonStyle.disabled()))
+    .add(...page('1.3 themed', () => buttonStyle.themed()))
+    .add(...page('1.4 anyColor', () => buttonStyle.anyColor()))
+    .add(...page('1.5 setHeight', () => buttonStyle.setHeight()))
+    .add(...page('1.6 layout', () => buttonStyle.layout()))
