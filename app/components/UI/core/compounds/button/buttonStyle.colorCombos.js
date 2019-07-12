@@ -1,4 +1,4 @@
-const combos = {
+const colorCombos = {
   dark: {
     a: 'dark',
     b: 'lightest',
@@ -60,4 +60,4 @@ const combos = {
   },
 };
 
-export default combos;
+export default colorCombos;

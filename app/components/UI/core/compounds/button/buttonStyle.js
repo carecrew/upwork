@@ -5,22 +5,22 @@ import { StyledText, RoundBorderView } from 'app/components/UI/core';
 import { Theme } from 'app/theme';
 
 import variants from './buttonStyle.variants';
-import combos from './buttonStyle.combos';
+import colorCombos from './buttonStyle.colorCombos';
 
-const ButtonStyle = ({ variant, label, disabled, height, width, color: combo }) => {
+const ButtonStyle = ({ variant, label, opacity, height, width, color: combo }) => {
   const { bg, borderWidth, borderColor, color } = variants[variant];
-  const opacity = disabled ? 0.3 : 1;
 
   return (
     <RoundBorderView
       height={Theme.size[height]}
       width={width}
-      bg={combos[combo][bg]}
-      borderColor={combos[combo][borderColor]}
+      bg={colorCombos[combo][bg]}
+      borderColor={colorCombos[combo][borderColor]}
       borderWidth={borderWidth}
       opacity={opacity}
+      px={3}
     >
-      <StyledText color={combos[combo][color]} variant="button">
+      <StyledText color={colorCombos[combo][color]} variant="button">
         {label}
       </StyledText>
     </RoundBorderView>
@@ -35,8 +35,8 @@ ButtonStyle.propTypes = {
   ...RoundBorderView.propTypes,
   variant: PropTypes.oneOf(Object.keys(variants)),
   label: PropTypes.string,
-  disabled: PropTypes.bool,
-  color: PropTypes.oneOf(Object.keys(combos)),
+  opacity: PropTypes.number,
+  color: PropTypes.oneOf(Object.keys(colorCombos)),
   height: PropTypes.number,
   width: PropTypes.number,
 };
@@ -44,7 +44,7 @@ ButtonStyle.propTypes = {
 ButtonStyle.defaultProps = {
   variant: 'filled',
   label: 'button',
-  disabled: false,
+  opacity: 1,
   color: 'i',
   height: 6,
   width: 1,

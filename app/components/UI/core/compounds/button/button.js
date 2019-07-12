@@ -1,47 +1,35 @@
-// import React from 'react';
-// import PropTypes from 'prop-types';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { TouchableOpacity } from 'react-native';
 
-// import { StyledText, RoundBorderView, Icon } from 'app/components/UI/core';
-// import variants from './button.variants';
+import ButtonStyle from './buttonStyle';
+import ButtonLogic from './buttonLogic';
 
-// const Button = props => {
-//   const { variant, content, name, useCase } = props;
-//   const { bg, borderWidth, borderColor, color } = variants[variant];
+const Button = ({ disabled, onPress, ...styleProps }) => {
+  return (
+    <ButtonLogic
+      onPress={onPress}
+      disabled={disabled}
+      render={({ logic, state }) => (
+        <TouchableOpacity
+          onPress={logic.pressButton}
+          activeOpacity={state.disabled ? 1 : 0.3}
+          style={{ width: '100%' }}
+        >
+          <ButtonStyle opacity={state.disabled ? 0.3 : 1} {...styleProps} />
+        </TouchableOpacity>
+      )}
+    />
+  );
+};
 
-//   const handleContent = input => {
-//     const UPPER_CHAR_LIMIT = 20;
-//     const sanitizedInput = input.trim();
+Button.propTypes = {
+  disabled: PropTypes.bool,
+  onPress: PropTypes.func.isRequired,
+};
 
-//     if (sanitizedInput.length > UPPER_CHAR_LIMIT) {
-//       return `${sanitizedInput.substring(0, 18)}...`;
-//     }
+Button.defaultProps = {
+  disabled: false,
+};
 
-//     return sanitizedInput;
-//   };
-
-//   return (
-//     <RoundBorderView variant>
-//       <StyledText {...useCase}>{handleContent(content)}</StyledText>
-//     </RoundBorderView>
-//   );
-// };
-
-// Button.propTypes = {
-//   ...StyledText.propTypes,
-//   ...RoundBorderView.propTypes,
-//   variant: PropTypes.oneOf(Object.keys(variants)),
-// };
-
-// Button.defaultProps = {
-//   // borderRadius: 4,
-//   height: 1 / 16, // design: 48dp
-//   padding: 16,
-//   opacity: 1,
-//   content: 'button',
-//   caps: true,
-//   variant: 'filled',
-//   size: 20,
-//   iconColor: '#FFFFFF',
-// };
-
-// export default Button;
+export default Button;
