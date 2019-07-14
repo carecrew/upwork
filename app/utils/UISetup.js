@@ -25,6 +25,36 @@ const UISetUp = {
       });
     });
   },
+
+  app() {
+    Navigation.events().registerAppLaunchedListener(() => {
+      Navigation.setRoot({
+        root: {
+          stack: {
+            id: 'upworkDemo',
+            children: [
+              {
+                component: {
+                  name: 'Screen1',
+                },
+              },
+              {
+                component: {
+                  name: 'Screen2',
+                },
+              },
+            ],
+            options: {
+              topBar: {
+                visible: true,
+                height: 48,
+              },
+            },
+          },
+        },
+      });
+    });
+  },
 };
 
 export default UISetUp;
