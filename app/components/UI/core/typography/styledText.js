@@ -37,7 +37,10 @@ StyledText.propTypes = {
   color: PropTypes.string,
   capitalize: PropTypes.bool,
   opacity: PropTypes.number,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
 };
 
 StyledText.defaultProps = {
@@ -45,6 +48,7 @@ StyledText.defaultProps = {
   color: 'default',
   capitalize: false,
   opacity: 1,
+  children: null,
 };
 
 export default StyledText;

@@ -62,6 +62,11 @@ const variants = {
     fontWeight: fontWeight.medium,
     fontSize: 32,
   },
+  upworkNumber: {
+    fontWeight: fontWeight.thin,
+    fontSize: 128,
+    numberOfLines: 1,
+  },
 };
 
 export default variants;

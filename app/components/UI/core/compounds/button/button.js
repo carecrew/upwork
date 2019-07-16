@@ -10,13 +10,13 @@ const Button = ({ disabled, onPress, ...styleProps }) => {
     <ButtonLogic
       onPress={onPress}
       disabled={disabled}
-      render={({ logic, state }) => (
+      render={({ logic }) => (
         <TouchableOpacity
           onPress={logic.pressButton}
-          activeOpacity={state.disabled ? 1 : 0.3}
+          activeOpacity={disabled ? 1 : 0.3}
           style={{ width: '100%' }}
         >
-          <ButtonStyle opacity={state.disabled ? 0.3 : 1} {...styleProps} />
+          <ButtonStyle opacity={disabled ? 0.3 : 1} {...styleProps} />
         </TouchableOpacity>
       )}
     />

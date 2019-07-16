@@ -2,19 +2,8 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class ButtonLogic extends Component {
-  state = {
-    disabled: false,
-  };
-
-  componentDidMount = () => {
-    const { disabled } = this.props;
-
-    this.setState({ disabled });
-  };
-
   pressHandler = () => {
-    const { disabled } = this.state;
-    const { onPress } = this.props;
+    const { onPress, disabled } = this.props;
 
     if (!disabled) {
       onPress();
@@ -24,7 +13,7 @@ class ButtonLogic extends Component {
   render() {
     const { render } = this.props;
 
-    return render({ logic: { pressButton: this.pressHandler }, state: this.state });
+    return render({ logic: { pressButton: this.pressHandler } });
   }
 }
 

@@ -1,12 +1,12 @@
-/* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react';
+import React from 'react';
 
-import { StyledView } from 'app/components/UI/core';
+import Screen2Logic from './screen2Logic';
+import Screen2Style from './screen2Style';
 
-class Screen2 extends Component {
-  render() {
-    return <StyledView />;
-  }
-}
+const Screen2 = () => {
+  return (
+    <Screen2Logic render={({ logic, state }) => <Screen2Style logic={logic} state={state} />} />
+  );
+};
 
 export default Screen2;

@@ -5,32 +5,32 @@ const colorCombos = {
   },
 
   jigglypuff: {
-    a: '#ff9ff3',
+    a: 'jigglypuff',
     b: 'lightest',
   },
 
   casandoraYellow: {
-    a: '#feca57',
+    a: 'casandoraYellow',
     b: 'lightest',
   },
 
   pastelRed: {
-    a: '#ff6b6b',
+    a: 'pastelRed',
     b: 'lightest',
   },
 
   megaMan: {
-    a: '#48dbfb',
+    a: 'megaMan',
     b: 'lightest',
   },
 
   jadeDust: {
-    a: '#00d2d3',
+    a: 'jadeDust',
     b: 'lightest',
   },
 
   nasuPurple: {
-    a: '#5f27cd',
+    a: 'nasuPurple',
     b: 'lightest',
   },
 
