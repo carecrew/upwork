@@ -1,0 +1,6 @@
+{
+  "apiUrl": "https://countries.trevorblades.com",
+  "useStoryBook": true,
+  "useApp": false,
+  "sketch": true
+}

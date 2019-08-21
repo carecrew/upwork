@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "dependencies": {
+    "graphql-tag": "",
+    "react-apollo": "",
+    "prop-types": "",
+    "react": "",
+    "react-native": "",
+    "react-native-navigation": "",
+    "react-native-typography": "",
+    "react-native-vector-icons": "",
+    "reactotron-react-native": "",
+    "styled-components": "",
+    "styled-system": ""
+  }
+}
