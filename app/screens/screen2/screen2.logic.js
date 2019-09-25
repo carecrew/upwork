@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unused-state */
+/* eslint-disable react/forbid-prop-types */
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -29,7 +30,7 @@ class Screen2Logic extends Component {
 
 Screen2Logic.propTypes = {
   toStyle: PropTypes.func.isRequired,
-  currentData: PropTypes.func.isRequired,
+  currentData: PropTypes.object.isRequired,
 };
 
 export default Screen2Logic;
