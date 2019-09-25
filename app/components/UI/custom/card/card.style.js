@@ -15,7 +15,9 @@ const CardStyle = ({ data: { country } }) => {
 
 CardStyle.propTypes = {
   data: PropTypes.shape({
-    country: PropTypes.string,
+    country: PropTypes.shape({
+      name: PropTypes.string,
+    }),
   }).isRequired,
 };
 
