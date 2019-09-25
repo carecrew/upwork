@@ -12,9 +12,15 @@ export { default as Circle } from 'app/components/UI/core/primitives/circle/circ
 export { default as CircleImage } from 'app/components/UI/core/primitives/circleImage/circleImage';
 export { default as Icon } from 'app/components/UI/core/primitives/icon/icon';
 export { default as Overlay } from 'app/components/UI/core/primitives/overlay/overlay';
-export { default as RoundBorderView } from 'app/components/UI/core/primitives/roundBorderView/roundBorderView';
-export { default as StyledTextInput } from 'app/components/UI/core/primitives/styledTextInput/styledTextInput';
-export { default as UnderlineView } from 'app/components/UI/core/primitives/underlineView/underlineView';
+export {
+  default as RoundBorderView,
+} from 'app/components/UI/core/primitives/roundBorderView/roundBorderView';
+export {
+  default as StyledTextInput,
+} from 'app/components/UI/core/primitives/styledTextInput/styledTextInput';
+export {
+  default as UnderlineView,
+} from 'app/components/UI/core/primitives/underlineView/underlineView';
 
 // Typography
 export { default as StyledText } from 'app/components/UI/core/typography/styledText';

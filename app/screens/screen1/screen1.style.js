@@ -9,7 +9,7 @@ import {
   Block,
   Button,
   StyledText,
-  Circle
+  Circle,
 } from 'app/components/UI/core';
 
 const Screen1Style = ({ logic, state }) => {

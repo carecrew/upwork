@@ -1,4 +1,4 @@
-import { Navigation } from 'react-native-navigation'
+import { Navigation } from 'react-native-navigation';
 
 const NavigationHelpers = {
   toScreen: (props, screenName) => {
@@ -6,8 +6,8 @@ const NavigationHelpers = {
       component: {
         name: screenName,
       },
-    })
+    });
   },
-}
+};
 
-export default NavigationHelpers
+export default NavigationHelpers;

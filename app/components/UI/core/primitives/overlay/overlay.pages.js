@@ -9,7 +9,7 @@ import {
   StyledText,
   Icon,
   UnderlineView,
-  Overlay
+  Overlay,
 } from 'app/components/UI/core';
 
 const pages = {
