@@ -8,7 +8,7 @@ import CardRowStyle from './cardRow/cardRow.style';
 const CardStyle = ({ data: { country } }) => {
   return (
     <RoundBorderView borderRadius={4} padding={Theme.size[3]}>
-      <CardRowStyle label="Country" value={country} />
+      <CardRowStyle label="Country" value={country.name} />
     </RoundBorderView>
   );
 };
